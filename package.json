@@ -1,5 +1,5 @@
 {
-  "name": "codeguides",
+  "name": "codeguides-server",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,23 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/easycodeguides/codeguides.git"
+    "url": "git+https://github.com/easycodeguides/codeguides-server.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/easycodeguides/codeguides/issues"
+    "url": "https://github.com/easycodeguides/codeguides-server/issues"
   },
-  "homepage": "https://github.com/easycodeguides/codeguides#readme",
+  "homepage": "https://github.com/easycodeguides/codeguides-server#readme",
   "devDependencies": {
     "editorconfig": "^0.15.3",
     "eslint": "^6.8.0",
     "husky": "^2.4.1",
     "lint-staged": "^10.0.0",
     "prettier": "^1.19.1",
-    "prettier-standard": "^16.1.0",
-    "stylelint": "^13.0.0",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-order": "^4.0.0"
+    "prettier-standard": "^16.1.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
