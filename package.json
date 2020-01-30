@@ -29,14 +29,21 @@
     "editorconfig": "^0.15.3",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^2.4.1",
-    "lint-staged": "^10.0.0",
+    "lint-staged": "^8.1.7",
     "nodemon": "^2.0.2",
+    "path-to-regexp": "latest",
     "prettier": "^1.19.1",
-    "prettier-standard": "^16.1.0"
+    "prettier-standard": "^16.1.0",
+    "standardjs": "^1.0.0-alpha"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "showdown": "^1.9.1"
   },
   "lint-staged": {
     "src/**/*.{js}": [
@@ -47,7 +54,7 @@
   },
   "husky": {
     "hooks": {
-      
+      "pre-commit": "lint-staged"
     }
   }
 }

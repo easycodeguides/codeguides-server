@@ -1,5 +1,6 @@
 module.exports = {
   add: () => 'added',
   edit: () => 'edited',
-  delete: () => 'deleted'
+  delete: () => 'deleted',
+  clone: () => 'cloned'
 }
