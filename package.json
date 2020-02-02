@@ -4,7 +4,16 @@
   "description": "server for codeguides",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:update": "jest --updateSnapshot",
+    "test:coverage": "jest --collectCoverage",
+    "start": "nodemon src/server.js",
+    "build": "webpack --mode production",
+    "lint:js": "eslint 'src/**/*.{js}'",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "prettier": "prettier --write src/**/*.js",
+    "format": "prettier-standard 'src/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -19,12 +28,33 @@
   "devDependencies": {
     "editorconfig": "^0.15.3",
     "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "husky": "^2.4.1",
-    "lint-staged": "^10.0.0",
+    "lint-staged": "^8.1.7",
+    "nodemon": "^2.0.2",
+    "path-to-regexp": "latest",
     "prettier": "^1.19.1",
-    "prettier-standard": "^16.1.0"
+    "prettier-standard": "^16.1.0",
+    "standardjs": "^1.0.0-alpha"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "showdown": "^1.9.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js}": [
+      "npm run format",
+      "npm run lint:js",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

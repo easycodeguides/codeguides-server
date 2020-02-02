@@ -1,10 +1,14 @@
 # codeguides-server
 
-### Start
-run `npm i` 
+## Install
+Run command:  
+`npm i` 
 
-run `node index.js`
+## Start
 
-### Health check
+Run command:  
+`npm run`
 
-go to `localhost:3000/healthcheck`
+## Health check
+
+go to `localhost:3007/healthcheck`
