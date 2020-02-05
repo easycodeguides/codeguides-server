@@ -35,6 +35,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^2.4.1",
     "lint-staged": "^8.1.7",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.2",
     "path-to-regexp": "latest",
     "prettier": "^1.19.1",
@@ -43,7 +44,8 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "showdown": "^1.9.1"
+    "showdown": "^1.9.1",
+    "body-parser": "latest"
   },
   "lint-staged": {
     "src/**/*.{js}": [

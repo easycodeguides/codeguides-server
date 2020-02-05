@@ -7,7 +7,7 @@ Run command:
 ## Start
 
 Run command:  
-`npm run`
+`npm start`
 
 ## Health check
 
