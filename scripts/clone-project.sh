@@ -1,5 +1,5 @@
 #!/bin/bash
-baseDir=$PWD
-cd ../repos
+ROOT=$3
+cd $ROOT/repos
 git clone $1 $2
-cd $baseDir
+echo git clone $1 $2
