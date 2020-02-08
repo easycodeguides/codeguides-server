@@ -1,5 +1,3 @@
-const showdown = require('showdown')
-
 module.exports = () => {
   return `
     <h1>Hello</h1>

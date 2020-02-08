@@ -14,7 +14,7 @@ router.get('/tutorials/add', (req, res) => { // change to post
 
 router.post('/repos/add', (req, res) => {
   const url = req.body.url
-  repos.add(url)
+  repos.get(url)
   res.send(`added repo:${url}`)
 })
 
