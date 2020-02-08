@@ -1,6 +1,11 @@
 const express = require('express')
 const htmlRouter = require('./routes/html')
 const apiRouter = require('./routes/api')
+const path = require('path')
+
+require('dotenv').config({
+  path: path.resolve(__dirname, '/../.env')
+})
 
 const app = express()
 const port = 3007
