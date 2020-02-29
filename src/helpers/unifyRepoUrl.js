@@ -1,4 +1,4 @@
-const unifyRepoUrl = (url) => {
+const unifyRepoUrl = url => {
   return url
 }
 
